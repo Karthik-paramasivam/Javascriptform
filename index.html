@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./java.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="h1 text-dark text-center">Form Validation</div>
+        
+        <form class="form-control border border-5 p-5 mx-auto" id="myForm" onsubmit="event.preventDefault(); val();">
+            <label for="name" class="form-label h4 text-dark">First name</label>
+            <input type="text" class="form-control" id="name" placeholder="First name" value = "" required>
+            <p id="nameer"></p>
+            <label for="name2" class="form-label h4 text-dark">Last name</label>
+            <input type="text" class="form-control" id="name2" placeholder="Last name">
+            <p id="nameer2"></p> 
+            <p class = "text-dark h4"><label for="">Geneder</label></p>
+            <div class="text-dark p-2">
+            <div class="h5" id="gen">
+                <p>
+                <input class="form-check-input" type="radio" name="gender"  value="Male"> <label class="me-5">Male</label></p> 
+                <p><input class="form-check-input" type="radio" name="gender"  value="Female"> <label class="me-5">Female</label></p>
+            <p><input class="form-check-input" type="radio" name="gender"  value="Other"> <label>Other</label></p>
+                </div>  
+        </div>
+            <p id="result"></p>
+            <p class="m-0">
+            <label for="date" class="h4 text-dark">Date of Birth</label></p>
+            <input type = "date" id="date" min="1900-01-01" onclick="cdate()">
+            <p id="dater"></p>
+
+            <label for="email" class="form-label h4 text-dark">Email-address</label>
+            <input type="text" class="form-control" id="email" placeholder="Email@example.com" value = "" required>  
+            <p id="emailer"></p>                
+            
+            <label for="phone" class="form-label h4 text-dark">Phone number</label>
+            <input type="text" class="form-control" id="phone" placeholder="Phone number" value = "" required>
+            <p id = "phoner"></p>           
+
+            <p class="h4 text-dark">Course Intrested</p>
+            <p>
+             <input class="form-check-input" type="checkbox" name = "course" value = "Fullstack development">
+             <label>Full stack development</label></p>
+             <p>
+            <input class="form-check-input" type="checkbox" name = "course" value = "IOS">
+            <label>IOS</label></p>
+            <p>
+            <input class="form-check-input" type="checkbox" name = "course" value = "Flutter"
+            <label>Flutter</label></p>
+            <p id="courses"></p>
+
+            <p id = "courses"></p>
+            <p class="h4 text-dark">Country </p>
+            <select onchange="drop()" id="country">
+            <option value="select">--Select your country--</option>
+            <option value="India">India</option>
+            <option value="Australia">Australia</option>
+            <option value="Italy">Italy</option>
+            <option value="France">France</option>
+            <option value="Sweden">Sweden</option>
+            <option value="Norway">Norway</option>
+            <option value="Japan">Japan</option>
+            <option value="USA">United States of America</option>
+            <option value="Canada">Canada</option>
+            <option value="Russia">Russia</option>
+            <option value="China">China</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Nort Korea">North Korea</option>
+            <option value="South Korea">South Korea</option>
+            <option value="UK">United Kingdom</option>
+            </select>
+            <p id = "list"></p>
+
+            <label for="password" class="form-label h4 text-dark">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password1@example.com" required>
+            <p id="pass"></p>
+
+            <label for="confrim password" class="form-label h4 text-dark">Conform Password</label>
+            <input type="password" class="form-control" id="confrim password" placeholder="Password1@example.com" value = "" required>
+            <p id="confrim pass"></p>
+             <div class="text-center">   
+            <input class="btn btn-primary mt-3 w-50 mx-auto text-center" onclick="val()" type="submit" value="Submit">
+        </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    
+</body>
+</html>
