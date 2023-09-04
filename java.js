@@ -9,6 +9,7 @@ function namevalidate(){
     }
     else if(!n1.test(n)){
         document.getElementById("nameer").innerHTML="*Please enter a valid name.";
+        document.getElementById("nameer").style.color="red";
         document.getElementById("name").style.border="3px solid red";
     }
     else{
