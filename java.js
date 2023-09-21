@@ -195,7 +195,7 @@ function phone()
         {
             let cp = document.getElementById("confrim password").value;
             let cp1 = document.getElementById("password").value;
-            let pa1 = /^(?!.*\s)(?=.*)(?=.*[a-z])(?=.*[0-9])(?=.*[~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹]).{10,16}$/;
+            let pa1 = /^(?!.*\s)(?=.*)(?=.*[a-z])(?=.*[0-9])(?=.*[~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹]).{8,16}$/;
             if(cp=="")
             {
                 document.getElementById("confrim pass").innerHTML = "*Please conform password.";
