@@ -172,7 +172,7 @@ function phone()
             function password()
         {
             let pa = document.getElementById("password").value;
-            let pa1 = /^(?!.*\s)(?=.*)(?=.*[a-z])(?=.*[0-9])(?=.*[~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹]).{10,16}$/;
+            let pa1 = /^(?!.*\s)(?=.*)(?=.*[a-z])(?=.*[0-9])(?=.*[~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹]).{8,16}$/;
             if(pa=="")
             {
                 document.getElementById("pass").innerHTML = "*Please enter password.";
